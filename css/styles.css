@@ -548,7 +548,10 @@ body {
     height: 40px;
     background-color: transparent;
     color: #ffffff;
-    padding: 16px 8px;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
 
 }
 .subscribe-text {
@@ -580,9 +583,10 @@ body {
     letter-spacing: 0.04em;
     color: #ffffff;
     cursor: pointer;
-    background-color: #404BBF;
     border-radius: 4px;
     border: none;
+    font-weight: 500;
+    background-color: #4D5AE5;
 }
 
 .footer-button:focus {
@@ -609,6 +613,7 @@ body {
     background-color: rgba(46, 47, 66, 0.4);
     top: 0;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    padding: 72px 24px 24px 24px;
 }
 
 .modal-window {
@@ -682,6 +687,8 @@ body {
     color: #2E2F42;
     margin-top: 48px;
     margin-bottom: 16px;
+    line-height: 1.5; 
+    letter-spacing: 0.02em; 
 }
 
 .modal-window-input {
@@ -692,6 +699,9 @@ body {
     padding-left: 30px;
 
     outline: transparent;
+    background-color: transparent;
+    padding-left: 38px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-window-input:focus {
@@ -717,7 +727,9 @@ body {
     font-size: 12px;
     letter-spacing: 0.04em;
     color: #8E8F99;
-    
+    line-height: 1.17; 
+    display: block; 
+    margin-bottom: 4px; 
 }
 
 .modal-window-label span {
@@ -730,6 +742,9 @@ body {
     left: 8px;
     top: 50%;
     transform: translateY(-50%);
+    left: 16px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .modal-comment {
@@ -743,13 +758,19 @@ body {
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 8px 16px;
+    font-size: 12px; 
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
 }
 
 .modal-comment:focus {
-    border-color: #404BBF;
+    border-color: #4D5AE5;
 }
 
 .modal-window-button {
+
+    background-color: #4D5AE5;
     min-width: 169px;
     height: 56px;
     font-family: inherit;
@@ -759,7 +780,7 @@ body {
     text-decoration: none;
     display: block;
     letter-spacing: 0.04em;
-    background: #404BBF;
+    
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
@@ -775,9 +796,9 @@ body {
     display: flex;
     align-items: center;
     font-size: 12px;
-    line-height: 14px;
     letter-spacing: 0.04em;
     color: #8E8F99;
+    line-height: 1.17;
 }
 
 .modal-window-privacy:checked + .modal-accept-privacy-check span {
@@ -785,6 +806,7 @@ body {
     border: 1px solid #404BBF;
     border-radius: 2px;
     fill: #F4F4FD;
+    border: none;
 }
 
 .modal-check {
@@ -797,6 +819,8 @@ body {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
 }
 
 .link-check {
@@ -807,6 +831,10 @@ body {
 
 .modal-window-checkbox {
     margin-bottom: 24px;
+}
+
+.class-modal-window-labeldiv {
+    margin-bottom: 16px;
 }
 
 /*portfolio*/
